@@ -15,7 +15,6 @@
 				height={500}
 				crop="pad"
 				removeBackground={true}
-				background="white"
 				effects={[
 					{
 						autoContrast: true,

@@ -1,3 +1,11 @@
+# What We Did in Step 7 (Conclusion)
+
+1. We removed the `background` attribute from the `CldImage` component in [ProductGrid.svelte](./src/lib/ProductGrid.svelte) to make it even more minimalistic.
+
+## What to demonstrate in Step 7
+
+- We have a clean minimalistic grid of products with a transparent background thanks to the Cloudinary AI superpowers.
+
 # What We Did in Step 6 (Background removal)
 
 1. We changed the `crop` to `pad` in [ProductGrid.svelte](./src/lib/ProductGrid.svelte).
