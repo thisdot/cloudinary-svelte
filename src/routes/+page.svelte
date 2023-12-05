@@ -2,17 +2,38 @@
 	import ProductGrid from '../lib/ProductGrid.svelte';
 
 	const images = [
-		{ src: '/product-images/black-fashion-backpack.jpg', title: 'Black fashion backpack' },
-		{ src: '/product-images/blue-t-shirt.jpg', title: 'Blue t shirt' },
 		{
-			src: '/product-images/bright-red-purse-with-gold.jpg',
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773749/yjmrebikn9bbskv80gki.jpg',
+			title: 'Black fashion backpack'
+		},
+		{
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773752/dzhwhjrwxjpj3dzufhk7.jpg',
+			title: 'Blue t shirt'
+		},
+		{
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773752/w66suwxav7q7vmd5eqjc.jpg',
 			title: 'Bright red purse with gold'
 		},
-		{ src: '/product-images/dainty-gold-necklace.jpg', title: 'Dainty gold necklace' },
-		{ src: '/product-images/light-green-t-shirt.jpg', title: 'Light green t shirt' },
-		{ src: '/product-images/red-bluetooth-earbuds.jpg', title: 'Red bluetooth eardbuds' },
-		{ src: '/product-images/purple-t-shirt.jpg', title: 'Purple t shirt' },
-		{ src: '/product-images/red-t-shirt.jpg', title: 'Red t shirt' }
+		{
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773748/m8ef4mansuf0t2t2a7an.jpg',
+			title: 'Dainty gold necklace'
+		},
+		{
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773752/mymvjorkexo0cbr36asm.jpg',
+			title: 'Light green t shirt'
+		},
+		{
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701780641/red-bluetooth-earbuds_njubn2.jpg',
+			title: 'Red bluetooth eardbuds'
+		},
+		{
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773754/hjrmnntcis3kvl09bhx7.jpg',
+			title: 'Purple t shirt'
+		},
+		{
+			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773753/pbvkxoqtoy0n9xx2wi6z.jpg',
+			title: 'Red t shirt'
+		}
 	];
 </script>
 
