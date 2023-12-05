@@ -10,7 +10,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
 	{#each images as image}
 		<div class="overflow-hidden rounded-lg">
-			<CldImage width={500} height="auto" src={image.src} alt={image.title} />
+			<CldImage width={500} height={500} crop="limit" src={image.src} alt={image.title} />
 		</div>
 	{/each}
 </div>

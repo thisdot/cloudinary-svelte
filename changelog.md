@@ -1,3 +1,29 @@
+# What We Did in Step 3 (Dynamic transformation)
+
+1. We modified the [ProductGrid.svelte](./src/lib/ProductGrid.svelte) `CldImage` properties to use:
+
+   ```html
+   <CldImage width="{500}" height="{500}" crop="limit" ... />
+   ```
+
+   - That means we have defined a square with max dimensions of 500x500px,
+   - and we are resizing the images to display in this square.
+
+   Other possible values for `crop` to play with are:
+
+   - `fill` - fill the square with the image, cropping the image if necessary
+   - `fit` - fit the image inside the square, adding whitespace if necessary
+   - `limit` - fit the image inside the square, but don't upscale it
+   - `pad` - fit the image inside the square, adding whitespace if necessary, but don't upscale it
+
+   > You can check the [interactive demo](https://cloudinary.com/documentation/resizing_and_cropping#resizing_and_cropping_interactive_demo) to see how the different crop modes work.
+
+## What to demonstrate in Step 3
+
+- Now the grid is nice and even. We could also show how it looks like when we change `limit` to `thumb`.
+- Not all images show the full product though. We could change it to `crop="pad"`, which shows the whole products, but it feels uneven.
+  - We'll address it more nicely in step 4 using the AI enabled capabilities.
+
 # What We Did in Step 2 (Cloudinary with auto optimization)
 
 1. We manually uploaded our product images to Cloudinary using the [Cloudinary Console](https://console.cloudinary.com/).
