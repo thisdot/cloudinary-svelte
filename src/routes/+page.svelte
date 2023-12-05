@@ -24,7 +24,12 @@
 		},
 		{
 			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701780641/red-bluetooth-earbuds_njubn2.jpg',
-			title: 'Red bluetooth eardbuds'
+			title: 'Red bluetooth eardbuds',
+			effects: [
+				{
+					replaceColor: 'CBCBCB:20:F7F5F8'
+				}
+			]
 		},
 		{
 			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773754/hjrmnntcis3kvl09bhx7.jpg',

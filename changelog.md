@@ -1,3 +1,58 @@
+# What We Did in Step 4 (AI-driven image processing)
+
+1. We modified the [ProductGrid.svelte](./src/lib/ProductGrid.svelte) `CldImage` properties to use:
+
+   ```html
+   <CldImage fillBackground="{true}" ... />
+   ```
+
+   - It's a beta feature, but now we have a nice and even grid which shows the full products on their background.
+
+2. We also added some `effects` to the `CldImage` properties to enhance the images and make them look nicer and more consistent. We can find the list of available effects in the [Svelte Cloudinary documentation](https://svelte.cloudinary.dev/cldimage/configuration/). We used the following effects:
+
+   ```html
+   <CldImage effects={[
+               {
+                  autoContrast: true,
+                  vibrance: 10,
+                  improve: true,
+               },
+            ]} ... />
+   ```
+
+3. Finally, we added an option to include effects per image in [+page.svelte](./src/routes/+page.svelte) and modified the `CldImage` properties to include the individual effects as well:
+
+   ```html
+   <CldImage effects={[
+               {
+                  autoContrast: true,
+                  vibrance: 10,
+                  improve: true,
+               },
+               ...(image.effects ?? [])
+            ]} ... />
+   ```
+
+4. And added a `color_replace` effect to the earbuds image in [+page.svelte](./src/routes/+page.svelte), so the white-ish color is replaced with gray color matching the other backgrounds. The syntax for the "replaceColor" effect is `replaceColor:<color_to_replace_with>:<tolerance>:<color_to_replace>`.
+
+   ```js
+         {
+            src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701780641/red-bluetooth-earbuds_njubn2.jpg',
+            title: 'Red bluetooth eardbuds',
+            effects: [
+               {
+                 rreplaceColor: 'CBCBCB:20:F7F5F8'
+               }
+            ]
+         },
+   ```
+
+## What to demonstrate in Step 4
+
+- Now it's a nice and even grid with all the products showing in full with their backgrounds.
+- We also used the `autoContrast`, `vibrance` and `improve` filters to enhance the images.
+- We also used the `replaceColor` filter to replace the white-ish color in the earbuds image with gray color matching the other backgrounds.
+
 # What We Did in Step 3 (Dynamic transformation)
 
 1. We modified the [ProductGrid.svelte](./src/lib/ProductGrid.svelte) `CldImage` properties to use:
