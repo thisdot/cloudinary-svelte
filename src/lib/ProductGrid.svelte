@@ -13,8 +13,9 @@
 			<CldImage
 				width={500}
 				height={500}
-				crop="limit"
-				fillBackground={true}
+				crop="pad"
+				removeBackground={true}
+				background="white"
 				effects={[
 					{
 						autoContrast: true,

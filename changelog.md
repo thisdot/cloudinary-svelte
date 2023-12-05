@@ -1,3 +1,22 @@
+# What We Did in Step 6 (Background removal)
+
+1. We changed the `crop` to `pad` in [ProductGrid.svelte](./src/lib/ProductGrid.svelte).
+
+2. We removed the `replaceColor` effect from the earbuds image in [+page.svelte](./src/routes/+page.svelte).
+
+3. We removed the `fillBackground={true}` and replaced it with `removeBackground={true}`.
+
+4. We added background color to the `CldImage` component in [ProductGrid.svelte](./src/lib/ProductGrid.svelte):
+
+   ```html
+   <CldImage background="white" ... />
+   ```
+
+## What to demonstrate in Step 6
+
+- It nicely removed the backgrounds. We altered the eardbuds image with the `replaceColor` effect, but it wasn't perfect, removing the background looks much better.
+- We now have a nice unified set of product images.
+
 # What We Did in Step 5 (Overlays)
 
 1. We have added `overlays` configuration to two images in [+page.svelte](./src/routes/+page.svelte).

@@ -78,11 +78,6 @@
 						}
 					]
 				}
-			],
-			effects: [
-				{
-					replaceColor: 'CBCBCB:20:F7F5F8'
-				}
 			]
 		},
 		{
