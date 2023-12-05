@@ -1,38 +1,49 @@
-# create-svelte
+# Cloudinary & Sveltekit Demo
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Setup
 
-## Creating a project
+1. Checkout the repo using your favorite GIT GUI or with
 
-If you're seeing this, you've probably already done this step. Congrats!
+   ```sh
+   git clone git@github.com:thisdot/cloudinary-svelte.git
+   ```
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+2. Install [Node.js](https://nodejs.org/en) >= 18. You can use an [installer](https://nodejs.org/en/download) or [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm).
 
-# create a new project in my-app
-npm create svelte@latest my-app
+3. Install [pnpm](https://pnpm.io/) by running
+
+   ```sh
+   npm install -g pnpm
+   ```
+
+4. Install the dependencies with
+
+   ```sh
+   pnpm i
+   ```
+
+## Serving the app
+
+Once you've installed the dependencies with `pnpm i` you can start the development server with
+
+```sh
+pnpm dev
 ```
 
-## Developing
+or, if you want to automatically open a new browser tab, with
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```sh
+pnpm dev --open
 ```
 
 ## Building
 
-To create a production version of your app:
+To create a production version of the app:
 
-```bash
-npm run build
+```sh
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `pnpm preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> To deploy the app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
