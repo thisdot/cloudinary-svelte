@@ -12,7 +12,34 @@
 		},
 		{
 			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773752/w66suwxav7q7vmd5eqjc.jpg',
-			title: 'Bright red purse with gold'
+			title: 'Bright red purse with gold',
+			overlays: [
+				{
+					text: {
+						text: 'New!',
+						fontSize: 18,
+						fontWeight: 'bold',
+						fontFamily: 'Montserrat',
+						color: 'white',
+						letterSpacing: 3
+					},
+					position: {
+						gravity: 'north_east',
+						y: 20,
+						x: 20,
+						angle: -18
+					},
+					effects: [
+						{
+							background: 'green',
+							crop: 'lpad',
+							radius: 'max',
+							width: 80,
+							height: 80
+						}
+					]
+				}
+			]
 		},
 		{
 			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773748/m8ef4mansuf0t2t2a7an.jpg',
@@ -25,6 +52,33 @@
 		{
 			src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701780641/red-bluetooth-earbuds_njubn2.jpg',
 			title: 'Red bluetooth eardbuds',
+			overlays: [
+				{
+					text: {
+						text: 'Sale!',
+						fontSize: 20,
+						fontWeight: 'bold',
+						fontFamily: 'Montserrat',
+						color: 'white',
+						letterSpacing: 3
+					},
+					position: {
+						gravity: 'north_east',
+						y: 20,
+						x: 20,
+						angle: 45
+					},
+					effects: [
+						{
+							background: 'orange',
+							crop: 'lpad',
+							radius: 'max',
+							width: 100,
+							height: 100
+						}
+					]
+				}
+			],
 			effects: [
 				{
 					replaceColor: 'CBCBCB:20:F7F5F8'

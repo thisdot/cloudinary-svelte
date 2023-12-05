@@ -1,3 +1,89 @@
+# What We Did in Step 5 (Overlays)
+
+1. We have added `overlays` configuration to two images in [+page.svelte](./src/routes/+page.svelte).
+
+   - One green "New" label in the top right corner of the first image, rotated slightly.
+
+   ```js
+       {
+           src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701773752/w66suwxav7q7vmd5eqjc.jpg',
+           title: 'Bright red purse with gold',
+           overlays: [
+               {
+                   text: {
+                       text: 'New!',
+                       fontSize: 18,
+                       fontWeight: 'bold',
+                       fontFamily: 'Montserrat',
+                       color: 'white',
+                       letterSpacing: 3
+                   },
+                   position: {
+                       gravity: 'north_east',
+                       y: 20,
+                       x: 20,
+                       angle: -18
+                   },
+                   effects: [
+                       {
+                           background: 'green',
+                           crop: 'lpad',
+                           radius: 'max',
+                           width: 80,
+                           height: 80
+                       }
+                   ]
+               }
+           ]
+       },
+   ```
+
+   - One orange "Sale" label in the top right corner, rotated a bit more:
+
+   ```js
+           {
+           src: 'https://res.cloudinary.com/dltsbx5b6/image/upload/v1701780641/red-bluetooth-earbuds_njubn2.jpg',
+           title: 'Red bluetooth eardbuds',
+           overlays: [
+               {
+                   text: {
+                       text: 'Sale!',
+                       fontSize: 20,
+                       fontWeight: 'bold',
+                       fontFamily: 'Montserrat',
+                       color: 'white',
+                       letterSpacing: 3
+                   },
+                   position: {
+                       gravity: 'north_east',
+                       y: 20,
+                       x: 20,
+                       angle: 45
+                   },
+                   effects: [
+                       {
+                           background: 'orange',
+                           crop: 'lpad',
+                           radius: 'max',
+                           width: 100,
+                           height: 100
+                       }
+                   ]
+               }
+           ],
+           ...
+   ```
+
+2. And we pass the overlays to the `CldImage` component in [ProductGrid.svelte](./src/lib/ProductGrid.svelte):
+
+   ```html
+   <CldImage overlays="{image.overlays" ?? []} ... />
+   ```
+
+## What to demonstrate in Step 5
+
+- We have labels just from configuration :)
+
 # What We Did in Step 4 (AI-driven image processing)
 
 1. We modified the [ProductGrid.svelte](./src/lib/ProductGrid.svelte) `CldImage` properties to use:

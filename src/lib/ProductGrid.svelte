@@ -2,7 +2,7 @@
 	import { CldImage } from 'svelte-cloudinary';
 
 	/**
-	 * @type {{ src: string, title: string, effects?: Array<unknown> }[]}
+	 * @type {{ src: string, title: string, effects?: Array<unknown>, overlays?: Array<unknown> }[]}
 	 */
 	export let images = [];
 </script>
@@ -23,6 +23,7 @@
 					},
 					...(image.effects ?? [])
 				]}
+				overlays={image.overlays ?? []}
 				src={image.src}
 				alt={image.title}
 			/>
